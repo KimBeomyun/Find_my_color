@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.pcolortestdemo">
+    package="com.example.pcolortest">
 
     <uses-feature android:name="android.hardware.camera" />
+
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -16,22 +17,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.PColorTestDemo"
+        android:theme="@style/Theme.PColorTest"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity6"
+            android:name=".MyPageActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity5"
+            android:name=".ColorInfoActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity4"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity3"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity2"
+            android:name=".ImageSelectActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

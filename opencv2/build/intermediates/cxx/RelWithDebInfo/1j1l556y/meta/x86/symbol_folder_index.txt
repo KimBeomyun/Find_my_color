@@ -1,1 +1,0 @@
-C:\ColorTestDemo\opencv2\build\intermediates\cxx\RelWithDebInfo\1j1l556y\obj\x86
