@@ -3,12 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/ColorTestDemo/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/ColorTestDemo/app/src/main/res/layout/activity_main2.xml" value="0.25" />
-        <entry key="..\:/ColorTestDemo/app/src/main/res/layout/activity_main3.xml" value="0.24048913043478262" />
-        <entry key="..\:/ColorTestDemo/app/src/main/res/layout/activity_main4.xml" value="0.3515625" />
-        <entry key="..\:/ColorTestDemo/app/src/main/res/layout/activity_main5.xml" value="0.36614583333333334" />
-        <entry key="..\:/ColorTestDemo/app/src/main/res/layout/activity_main6.xml" value="0.3515625" />
+        <entry key="..\:/PersonalColorTest/app/src/main/res/layout/activity_color_info.xml" value="0.24864130434782608" />
+        <entry key="..\:/PersonalColorTest/app/src/main/res/layout/activity_image_select.xml" value="0.1" />
+        <entry key="..\:/PersonalColorTest/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/PersonalColorTest/app/src/main/res/layout/activity_my_page.xml" value="0.24864130434782608" />
       </map>
     </option>
   </component>
