@@ -12,6 +12,7 @@ import android.graphics.Color
 import android.graphics.drawable.BitmapDrawable
 import android.util.Log
 import kotlin.math.round
+import kotlin.math.abs
 
 class ImageSelectActivity : AppCompatActivity() {
 
@@ -45,7 +46,6 @@ class ImageSelectActivity : AppCompatActivity() {
             val falColor = 27.13987
             val winColor = 16.73913
 
-
         }
     }
 
@@ -53,7 +53,8 @@ class ImageSelectActivity : AppCompatActivity() {
     private fun pickImageGallery(){
         val intent = Intent(Intent.ACTION_PICK) // 이미지 선택을 위한 Intent 생성
         intent.type = "image/*" // 이미지 타입의 파일만 선택 가능하도록 설정
-        startActivityForResult(intent, ImageSelectActivity.IMAGE_REQUEST_CODE) // 이미지 선택 액티비티를 열고 결과를 처리할 때 IMAGE_REQUEST_CODE를 사용
+        startActivityForResult(intent, ImageSelectActivity.IMAGE_REQUEST_CODE)
+        // 이미지 선택 액티비티를 열고 결과를 처리할 때 IMAGE_REQUEST_CODE를 사용
     }
 
     // 이미지 선택 액티비티 결과를 처리하는 함수
@@ -88,6 +89,37 @@ class ImageSelectActivity : AppCompatActivity() {
                         // HSV 변수를 사용하여 선택한 좌표의 색상을 처리
                         // 예: Log.d("Color", "Hue: $hue, Saturation: $saturation%, Value: $value%")
                         Log.d("Color", "Hue: $hue, Saturation: $saturation%, Value: $value%")
+
+                        val sprColor = 18.59296
+                        val sumColor = 12.5
+                        val falColor = 27.13987
+                        val winColor = 16.73913
+
+                        if(abs(saturation-sprColor)<abs(saturation-sumColor)&&abs(saturation-sprColor)<abs(saturation-falColor)&&abs(saturation-sprColor)<abs(saturation-winColor)){
+                            // 'ColorInfoActivity'로 이동하는 인텐트 생성
+                            val intent4 = Intent(this, SpringActivity::class.java)
+                            // 생성한 인텐트 실행하여 화면 전환
+                            startActivity(intent4)
+                        }
+                        if(abs(saturation-sumColor)<abs(saturation-sprColor)&&abs(saturation-sumColor)<abs(saturation-falColor)&&abs(saturation-sumColor)<abs(saturation-winColor)){
+                            // 'ColorInfoActivity'로 이동하는 인텐트 생성
+                            val intent5 = Intent(this, SummerActivity::class.java)
+                            // 생성한 인텐트 실행하여 화면 전환
+                            startActivity(intent5)
+                        }
+                        if(abs(saturation-falColor)<abs(saturation-sumColor)&&abs(saturation-falColor)<abs(saturation-sprColor)&&abs(saturation-falColor)<abs(saturation-winColor)){
+                            // 'ColorInfoActivity'로 이동하는 인텐트 생성
+                            val intent6 = Intent(this, FallActivity::class.java)
+                            // 생성한 인텐트 실행하여 화면 전환
+                            startActivity(intent6)
+                        }
+                        if(abs(saturation-winColor)<abs(saturation-sumColor)&&abs(saturation-winColor)<abs(saturation-falColor)&&abs(saturation-winColor)<abs(saturation-sprColor)){
+                            // 'ColorInfoActivity'로 이동하는 인텐트 생성
+                            val intent7 = Intent(this, WinterActivity::class.java)
+                            // 생성한 인텐트 실행하여 화면 전환
+                            startActivity(intent7)
+                        }
+
                     }
                 }
             }
