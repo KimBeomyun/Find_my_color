@@ -4,9 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/PersonalColorTest/app/src/main/res/layout/activity_color_info.xml" value="0.24864130434782608" />
-        <entry key="..\:/PersonalColorTest/app/src/main/res/layout/activity_image_select.xml" value="0.1" />
-        <entry key="..\:/PersonalColorTest/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/PersonalColorTest/app/src/main/res/layout/activity_fall.xml" value="0.25833333333333336" />
+        <entry key="..\:/PersonalColorTest/app/src/main/res/layout/activity_image_select.xml" value="0.25" />
+        <entry key="..\:/PersonalColorTest/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/PersonalColorTest/app/src/main/res/layout/activity_my_page.xml" value="0.24864130434782608" />
+        <entry key="..\:/PersonalColorTest/app/src/main/res/layout/activity_spring.xml" value="0.25833333333333336" />
+        <entry key="..\:/PersonalColorTest/app/src/main/res/layout/activity_summer.xml" value="0.25833333333333336" />
+        <entry key="..\:/PersonalColorTest/app/src/main/res/layout/activity_winter.xml" value="0.25833333333333336" />
       </map>
     </option>
   </component>

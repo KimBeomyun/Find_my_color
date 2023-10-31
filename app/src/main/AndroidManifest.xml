@@ -20,6 +20,18 @@
         android:theme="@style/Theme.PColorTest"
         tools:targetApi="31">
         <activity
+            android:name=".WinterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SummerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpringActivity"
+            android:exported="false" />
+        <activity
             android:name=".MyPageActivity"
             android:exported="false" />
         <activity
