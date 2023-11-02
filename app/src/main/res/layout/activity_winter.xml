@@ -6,11 +6,135 @@
     android:layout_height="match_parent"
     tools:context=".WinterActivity">
 
-    <TextView
-        android:id="@+id/textView7"
+    <ImageView
+        android:id="@+id/imageView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="겨울"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="270dp" />
+        android:layout_marginStart="128dp"
+        android:layout_marginBottom="496dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rac" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rac" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="214dp"
+        android:layout_height="32dp"
+        android:text="당신의 진단 유형은..."
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.359" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="겨울 쿨"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.411" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="146dp"
+        android:layout_height="152dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143"
+        app:srcCompat="@drawable/winterface" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="353dp"
+        android:layout_height="363dp"
+        android:layout_marginBottom="10dp"
+        android:background="#8CD9D9D9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.959">
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="16dp"
+                android:text="차가운 도시 여자의 대명사인 겨울 쿨톤은 개성있고 확실한 존재감이 느껴지는 유형입니다.\n
+카리스마있고 임팩트 있는 유형입니다.\n
+# 차도녀 # 카리스마\n\n
+
+메이크업\n
+- 무게감이 느껴지는 스킨표현이 좋으며 색조 메이크업 보다는 피부 표현에 집중하는 것이 좋습니다.\n
+- 음영 메이크업보다는 깔끔하고 선명한 아이, 립 메이크업이 어울립니다.\n
+- 선을 강조한 아이 메이크업이나 레드립과 같이 립 포인트 메이크업이 어울리지만 둘 중 하나만 선택하여 포인트 주는 것이 좋습니다.\n\n
+
+패션\n
+- 모던하고 시크한 분위기의 옷들이 잘 어울립니다.\n
+- 블랙앤화이트 조합이 잘 어울리며 포멀한 분위기가 더해진 오피스룩 (ex 수트 셋업)이 잘 어울립니다.\n\n
+겨울 쿨톤의 컬러칩"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="match_parent"
+                android:layout_height="119dp"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="16dp"
+                app:srcCompat="@drawable/wintercolor" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="16dp"
+                android:text="
+겨울 유형은 강하면서도 선명하고 다소 날카로운 느낌을 줍니다.\n
+푸른빛이 감도는 색상 중에서도 강하고 가라앉는 느낌을 주는 계열의 색상입니다.\n
+어울리는 색상은 명도는 낮고 채도는 높은 색상입니다. 푸르면서 흰색이 기본 색이 됩니다. \n
+검정과 흰색, 흰 빛을 지는 색과 푸른 빛을 지닌 원색, 레드나 와인, 자주계열, 청블루, 청보라 등의 강렬하면서 대조되는 색상이 잘 어울립니다.\n
+황금색 계열의 색상은 피해야 합니다.\n"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
