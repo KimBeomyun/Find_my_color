@@ -7,10 +7,10 @@ import android.widget.Button
 import android.widget.ImageView
 import android.view.MotionEvent
 import android.view.ScaleGestureDetector
-import android.graphics.Bitmap
 import android.graphics.Color
 import android.graphics.drawable.BitmapDrawable
 import android.util.Log
+import android.widget.Toast
 import kotlin.math.round
 import kotlin.math.abs
 
@@ -38,14 +38,15 @@ class ImageSelectActivity : AppCompatActivity() {
 
         mScaleGestureDetector = ScaleGestureDetector(this, ScaleListener())
 
-        val btn4 = findViewById<Button>(R.id.btn_ok)
-        btn4.setOnClickListener{
-            // 각 계절의 피부 색상 평균
-            val sprColor = 18.59296
-            val sumColor = 12.5
-            val falColor = 27.13987
-            val winColor = 16.73913
+        Toast.makeText(this@ImageSelectActivity, "과한 필터나 조명에 따라 결과가 바뀔 수 있습니다.", Toast.LENGTH_LONG).show()
 
+        Toast.makeText(this@ImageSelectActivity, "과한 악세서리나 화장이 진한 사진은 삼가바랍니다.", Toast.LENGTH_LONG).show()
+
+        Toast.makeText(this@ImageSelectActivity, "이미지 선택 후 볼을 터치해주세요.", Toast.LENGTH_LONG).show()
+
+        val btn4 = findViewById<Button>(R.id.btn_back)
+        btn4.setOnClickListener{
+            pickImageGallery()
         }
     }
 
@@ -96,25 +97,25 @@ class ImageSelectActivity : AppCompatActivity() {
                         val winColor = 16.73913
 
                         if(abs(saturation-sprColor)<abs(saturation-sumColor)&&abs(saturation-sprColor)<abs(saturation-falColor)&&abs(saturation-sprColor)<abs(saturation-winColor)){
-                            // 'ColorInfoActivity'로 이동하는 인텐트 생성
+                            // 'SpringActivity'로 이동하는 인텐트 생성
                             val intent4 = Intent(this, SpringActivity::class.java)
                             // 생성한 인텐트 실행하여 화면 전환
                             startActivity(intent4)
                         }
                         if(abs(saturation-sumColor)<abs(saturation-sprColor)&&abs(saturation-sumColor)<abs(saturation-falColor)&&abs(saturation-sumColor)<abs(saturation-winColor)){
-                            // 'ColorInfoActivity'로 이동하는 인텐트 생성
+                            // 'SummerActivity'로 이동하는 인텐트 생성
                             val intent5 = Intent(this, SummerActivity::class.java)
                             // 생성한 인텐트 실행하여 화면 전환
                             startActivity(intent5)
                         }
                         if(abs(saturation-falColor)<abs(saturation-sumColor)&&abs(saturation-falColor)<abs(saturation-sprColor)&&abs(saturation-falColor)<abs(saturation-winColor)){
-                            // 'ColorInfoActivity'로 이동하는 인텐트 생성
+                            // 'FallActivity'로 이동하는 인텐트 생성
                             val intent6 = Intent(this, FallActivity::class.java)
                             // 생성한 인텐트 실행하여 화면 전환
                             startActivity(intent6)
                         }
                         if(abs(saturation-winColor)<abs(saturation-sumColor)&&abs(saturation-winColor)<abs(saturation-falColor)&&abs(saturation-winColor)<abs(saturation-sprColor)){
-                            // 'ColorInfoActivity'로 이동하는 인텐트 생성
+                            // 'WinterActivity'로 이동하는 인텐트 생성
                             val intent7 = Intent(this, WinterActivity::class.java)
                             // 생성한 인텐트 실행하여 화면 전환
                             startActivity(intent7)
