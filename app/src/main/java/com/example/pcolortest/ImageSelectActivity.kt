@@ -13,6 +13,12 @@ import android.util.Log
 import android.widget.Toast
 import kotlin.math.round
 import kotlin.math.abs
+import android.graphics.ColorSpace
+import androidx.core.graphics.ColorUtils
+import android.graphics.Bitmap
+import java.lang.Math.pow
+import java.lang.StrictMath.pow
+import kotlin.math.round
 
 class ImageSelectActivity : AppCompatActivity() {
 
@@ -87,6 +93,13 @@ class ImageSelectActivity : AppCompatActivity() {
                         val saturation = round(hsv[1] * 100) // Saturation (0-100%)
                         val value = round(hsv[2] * 100) // Value (0-100%)
 
+                        // Lab 색상 추출
+                        val lab = rgbToLab(Color.red(pixelColor), Color.green(pixelColor), Color.blue(pixelColor))
+
+                        val lightness = round(lab[0])
+                        val a = round(lab[1])
+                        val b = round(lab[2])
+
                         // HSV 변수를 사용하여 선택한 좌표의 색상을 처리
                         // 예: Log.d("Color", "Hue: $hue, Saturation: $saturation%, Value: $value%")
                         Log.d("Color", "Hue: $hue, Saturation: $saturation%, Value: $value%")
@@ -95,6 +108,39 @@ class ImageSelectActivity : AppCompatActivity() {
                         val sumColor = 12.5
                         val falColor = 27.13987
                         val winColor = 16.73913
+
+                        val warmColor = 11.6518
+                        val coolColor = 4.64255
+
+//                        if(abs(b-warmColor) < abs(b-coolColor)){
+//                            if(abs(saturation-sprColor)<abs(saturation-sumColor)&&abs(saturation-sprColor)<abs(saturation-falColor)&&abs(saturation-sprColor)<abs(saturation-winColor)){
+//                                // 'SpringActivity'로 이동하는 인텐트 생성
+//                                val intent4 = Intent(this, SpringActivity::class.java)
+//                                // 생성한 인텐트 실행하여 화면 전환
+//                                startActivity(intent4)
+//                            }
+//                            else if(abs(saturation-falColor)<abs(saturation-sumColor)&&abs(saturation-falColor)<abs(saturation-sprColor)&&abs(saturation-falColor)<abs(saturation-winColor)){
+//                                // 'FallActivity'로 이동하는 인텐트 생성
+//                                val intent6 = Intent(this, FallActivity::class.java)
+//                                // 생성한 인텐트 실행하여 화면 전환
+//                                startActivity(intent6)
+//                            }
+//                        }
+//
+//                        if(abs(b-coolColor) < abs(b-warmColor)){
+//                            if(abs(saturation-sumColor)<abs(saturation-sprColor)&&abs(saturation-sumColor)<abs(saturation-falColor)&&abs(saturation-sumColor)<abs(saturation-winColor)){
+//                                // 'SummerActivity'로 이동하는 인텐트 생성
+//                                val intent5 = Intent(this, SummerActivity::class.java)
+//                                // 생성한 인텐트 실행하여 화면 전환
+//                                startActivity(intent5)
+//                            }
+//                            else if(abs(saturation-winColor)<abs(saturation-sumColor)&&abs(saturation-winColor)<abs(saturation-falColor)&&abs(saturation-winColor)<abs(saturation-sprColor)){
+//                                // 'WinterActivity'로 이동하는 인텐트 생성
+//                                val intent7 = Intent(this, WinterActivity::class.java)
+//                                // 생성한 인텐트 실행하여 화면 전환
+//                                startActivity(intent7)
+//                            }
+//                        }
 
                         if(abs(saturation-sprColor)<abs(saturation-sumColor)&&abs(saturation-sprColor)<abs(saturation-falColor)&&abs(saturation-sprColor)<abs(saturation-winColor)){
                             // 'SpringActivity'로 이동하는 인텐트 생성
@@ -142,4 +188,78 @@ class ImageSelectActivity : AppCompatActivity() {
             return true
         }
     }
+
+    // RGB를 Lab로 변환하는 함수
+    private fun rgbToLab(r: Int, g: Int, b: Int): FloatArray {
+        val xyz = rgbToXyz(r, g, b)
+        return xyzToLab(xyz[0], xyz[1], xyz[2])
+    }
+
+    private fun rgbToXyz(r: Int, g: Int, b: Int): FloatArray {
+        var var_R = r / 255f
+        var var_G = g / 255f
+        var var_B = b / 255f
+
+        if (var_R > 0.04045f) {
+            var_R = (var_R + 0.055f) / 1.055f
+            var_R = Math.pow(var_R.toDouble(), 2.4).toFloat()
+        } else {
+            var_R = var_R / 12.92f
+        }
+        if (var_G > 0.04045f) {
+            var_G = (var_G + 0.055f) / 1.055f
+            var_G = Math.pow(var_G.toDouble(), 2.4).toFloat()
+        } else {
+            var_G = var_G / 12.92f
+        }
+        if (var_B > 0.04045f) {
+            var_B = (var_B + 0.055f) / 1.055f
+            var_B = Math.pow(var_B.toDouble(), 2.4).toFloat()
+        } else {
+            var_B = var_B / 12.92f
+        }
+
+        var_R *= 100f
+        var_G *= 100f
+        var_B *= 100f
+
+        return floatArrayOf(
+            var_R * 0.4124564f + var_G * 0.3575761f + var_B * 0.1804375f,
+            var_R * 0.2126729f + var_G * 0.7151522f + var_B * 0.0721750f,
+            var_R * 0.0193339f + var_G * 0.1191920f + var_B * 0.9503041f
+        )
+    }
+
+    private fun xyzToLab(x: Float, y: Float, z: Float): FloatArray {
+        val ref_X =  95.047f
+        val ref_Y = 100.000f
+        val ref_Z = 108.883f
+        var var_X = x / ref_X
+        var var_Y = y / ref_Y
+        var var_Z = z / ref_Z
+
+        if (var_X > 0.008856f) {
+            var_X = Math.cbrt(var_X.toDouble()).toFloat()
+        } else {
+            var_X = (var_X * 903.3f + 16f) / 116f
+        }
+        if (var_Y > 0.008856f) {
+            var_Y = Math.cbrt(var_Y.toDouble()).toFloat()
+        } else {
+            var_Y = (var_Y * 903.3f + 16f) / 116f
+        }
+        if (var_Z > 0.008856f) {
+            var_Z = Math.cbrt(var_Z.toDouble()).toFloat()
+        } else {
+            var_Z = (var_Z * 903.3f + 16f) / 116f
+        }
+
+        return floatArrayOf(
+            (116f * var_Y) - 16f,
+            (var_X - var_Y) * 500f,
+            (var_Y - var_Z) * 200f
+        )
+    }
 }
+
+
