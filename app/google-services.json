@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "927748051234",
+    "firebase_url": "https://personalcolor-75ef9-default-rtdb.firebaseio.com",
+    "project_id": "personalcolor-75ef9",
+    "storage_bucket": "personalcolor-75ef9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927748051234:android:aaec890e2faf81e8cb957b",
+        "android_client_info": {
+          "package_name": "com.example.pcolortest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALg89r6T-smkDXqsYe2n43dG-R66lESNY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

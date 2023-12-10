@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SummerActivity">
+
+    <Button
+        android:id="@+id/su_mycolor_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="마이컬러"
+        android:fontFamily="@font/nanumsquareneo_variable"
+        android:textStyle="bold"
+        app:backgroundTint="#58D691"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginBottom="496dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rac" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rac" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="214dp"
+        android:layout_height="32dp"
+        android:text="당신의 진단 유형은..."
+        android:fontFamily="@font/nanumsquareneo_variable"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.359" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="여름 쿨"
+        android:fontFamily="@font/nanumsquareneo_variable"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.411" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="147dp"
+        android:layout_height="148dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.149"
+        app:srcCompat="@drawable/summerface" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="353dp"
+        android:layout_height="363dp"
+        android:layout_marginBottom="10dp"
+        android:background="#8CD9D9D9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.959">
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="16dp"
+                android:fontFamily="@font/nanumsquareneo_variable"
+                android:text="여름쿨톤은 청순한 이미지의 대명사입니다.\n
+우아하면서도 부드러우며 청초하고 깨끗한 느낌의 색상입니다.\n
+# 지적인 # 우아한 # 청순한\n\n
+
+메이크업\n
+- 자연스러운 혈색감이 느껴지는 피부로 피부 본연의 색을 살려 투명한 피부표현이 잘 어울립니다. 건성일 경우 은은한 광을 더해주고 지성일 경우 세미 매트 정도로 균형을 맞춘 피부 표현이 어울립니다.\n
+- 여름쿨톤은 강한 아이 메이크업이 어울리지 않습니다. 강한 스모키 메이크업보다는 속눈썹에 포인트를 주는 아이 메이크업을 추천합니다.\n\n
+
+패션\n
+- 여름 쿨톤의 우아한 분위기를 잘 살려줄 수 있는 옷이 좋습니다.\n
+- 너무 과한 디테일이 들어간 옷들 보단 심플하고 깨끗한 라인의 옷들을 추천합니다.\n
+- 실루엣에 포인트가 있으며 디테일은 깨끗한 파스텔톤의 옷이 좋으며 너무 활동적인 스타일보다는 베이직한 무드의 연출이 좋습니다.\n\n
+여름 쿨톤의 컬러칩"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="match_parent"
+                android:layout_height="119dp"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="16dp"
+                app:srcCompat="@drawable/summercolor" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="16dp"
+                android:fontFamily="@font/nanumsquareneo_variable"
+                android:text="
+여름 유형은 흰색이 기본 색상이라고 할 수 있습니다.\n
+대표적인 색상으로는 소프트 화이트, 라이트 블루, 그레이, 파스텔 아쿠아, 파스텔 핑크, 라벤더, 부드럽고 차가운 느낌의 핑크, 연보라 등 색상이 튀지 않는 파스텔 계열로 전체적으로 흰 빛을 지닌 색상이 잘 어울립니다.\n
+검은색이나 너무 어두운색, 금속성의 반사적인 색, 노란끼가 있는 색은 피해야합니다.\n
+봄 유형의 색과는 상극입니다.\n"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.pcolortestdemo">
+    package="com.example.pcolortest">
+
+    <uses-sdk tools:overrideLibrary="com.kakao.sdk:v2-user:2.0.1" />
 
     <uses-feature android:name="android.hardware.camera" />
+
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".GlobalApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -16,22 +21,57 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.PColorTestDemo"
+        android:theme="@style/Theme.PColorTest"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity6"
+            android:name=".SplashActivity4"
             android:exported="false" />
         <activity
-            android:name=".MainActivity5"
+            android:name=".SplashActivity3"
             android:exported="false" />
         <activity
-            android:name=".MainActivity4"
+            android:name=".SplashActivity2"
             android:exported="false" />
         <activity
-            android:name=".MainActivity3"
+            android:name=".SplashActivity"
             android:exported="false" />
+        <activity
+            android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="oauth"
+                    android:scheme="kakao{843146d232af3549d0f8ebf7f286d50e}" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".WinterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SummerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpringActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ColorInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ImageSelectActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

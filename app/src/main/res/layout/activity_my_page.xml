@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPageActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="212dp"
+        android:layout_marginBottom="448dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cir1" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="496dp"
+        android:layout_marginEnd="192dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cir1" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="86dp"
+        android:layout_height="82dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041"
+        app:srcCompat="@drawable/mainlogo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="133dp"
+        android:layout_height="33dp"
+        android:text="파인드컬러"
+
+        android:textColor="#325049"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="131dp"
+        android:layout_height="122dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.217"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238"
+        app:srcCompat="@drawable/prf_ph" />
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="132dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.759"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.335"
+        app:srcCompat="@drawable/name" />
+
+    <Button
+        android:id="@+id/btn_go_spr"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="봄 웜톤"
+        android:textStyle="bold"
+        app:backgroundTint="#58D691"
+        app:layout_constraintBottom_toTopOf="@+id/btn_go_sum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.887" />
+
+    <Button
+        android:id="@+id/btn_go_sum"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="여름 쿨톤"
+        android:textStyle="bold"
+        app:backgroundTint="#58D691"
+        app:layout_constraintBottom_toTopOf="@+id/btn_go_fal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.917" />
+
+    <Button
+        android:id="@+id/btn_go_fal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="가을 웜톤"
+        android:textStyle="bold"
+        app:backgroundTint="#58D691"
+        app:layout_constraintBottom_toTopOf="@+id/btn_go_win"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.928" />
+
+    <Button
+        android:id="@+id/btn_go_win"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="겨울 쿨톤"
+        android:textStyle="bold"
+        app:backgroundTint="#58D691"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.852" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView16"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="가을 웜톤"-->
+<!--        tools:layout_editor_absoluteX="186dp"-->
+<!--        tools:layout_editor_absoluteY="194dp" />-->
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그아웃"
+        app:backgroundTint="#58D691"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가을 웜톤"
+        android:textColor="#325049"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.703"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <!--
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="353dp"
+            android:layout_height="430dp"
+            android:layout_marginBottom="10dp"
+            android:background="#8CD9D9D9"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.959">
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.1"
+                    android:paddingStart="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="가을웜톤은 성숙하고 분위기 있는 여성의 대명사 입니다.\n
+    자연스럽고 따뜻한 분위기와 세련미가 있는 유형입니다.\n
+    가을웜톤 유형의 사람들은 동안 스타일링보다는 깊은 분위기 표현에 중점을 두어야 합니다.\n
+    # 분위기 있는 # 성숙한 # 세련된\n\n
+
+    메이크업\n
+    - 가을 웜톤은 색감이 많지 않은 스킨톤을 가집니다.\n
+    자연스러운 피부 표현부터 화려한 메이크업까지 스펙트럼이 가장 넓은 유형입니다.\n
+    피부 표현은 물광보다는 매트한 표현을 추천합니다.\n
+    - 스모키 아이처럼 딥한 그라데이션이나 음영 메이크업도 과한 느낌 없이 잘 소화합니다.\n\n
+
+    패션\n
+    - #분위기가 주요 키워드인 가을 웜톤은 트렌치코트와 같은 클래식한 분위기의 옷이 잘 어울리며 반대로 화려한 무드의 옷들도 잘 소화합니다\n\n
+    가을 웜톤의 컬러칩"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="119dp"
+                    android:paddingStart="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingEnd="16dp"
+                    app:srcCompat="@drawable/fallcolor" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.1"
+                    android:paddingStart="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="
+    가을 색상은 황색 빛을 주는 느낌의 색상이며 차분하고 부드러운 느낌을 줍니다.\n
+    어울리는 색상은 명도와 채도가 낮은 진하고 탁한 색상들입니다.\n
+    모든 색상에 노란빛과 검은빛이 섞여있는 오이스트 화이트, 웜 베이지, 마호가니, 오렌지, 모스그린, 틸블루등이 해당됩니다.\n
+    불투명하거나 파스텔 톤의 옅은색, 찬계열의 색, 선명한 원색은 피하는 것이 좋습니다.\n"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

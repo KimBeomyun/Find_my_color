@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpringActivity">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginBottom="496dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rac" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rac" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="214dp"
+        android:layout_height="32dp"
+        android:text="당신의 진단 유형은..."
+        android:fontFamily="@font/nanumsquareneo_variable"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.359" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="봄 웜"
+        android:fontFamily="@font/nanumsquareneo_variable"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.411" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="353dp"
+        android:layout_height="363dp"
+        android:layout_marginBottom="10dp"
+        android:background="#8CD9D9D9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.959">
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="16dp"
+                android:fontFamily="@font/nanumsquareneo_variable"
+                android:text="봄웜톤은 밝고 사랑스러운 이미지의 유형입니다.\n
+봄웜톤 여성들 중에는 동안이 많은 것으로 유명합니다.\n
+# 귀여운 # 밝은 # 사랑스러운\n\n
+
+메이크업\n
+- 봄웜톤은 얇고 투명한 피부가 많습니다. 두꺼운 베이스의 피부 표현은 답답해 보일 수 있으므로 최대한 얇고 자연스러운 피부 표현과 함께 촉촉한 스킨 표현이 잘 어울립니다.\n
+- 진한 아이 메이크업 보다는 가벼운 섀도우와 깨끗하고 심플한 아이라이너 연출이 잘 어울립니다.\n\n
+
+패션\n
+- 봄웜톤의 사랑스러운 이미지를 살리는 페미닌한 무드의 옷들이 잘 어울립니다.\n
+- 퍼프나 프릴 등의 디테일도 거부감 없이 잘 어울리며 밝고 생기 있는 이미지를 살려주는 캐주얼한 착장을 추천합니다.\n\n
+봄 웜톤의 컬러칩"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="match_parent"
+                android:layout_height="119dp"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="16dp"
+                app:srcCompat="@drawable/springcolor" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="16dp"
+                android:fontFamily="@font/nanumsquareneo_variable"
+                android:text="봄 유형은 대부분 온화하고 부드럽게 보이는 것이 특징이며 따뜻한 톤이 어울립니다.\n
+어울리는 색상은 명도는 높고 채도는 낮으며 생기있는 톤입니다.\n
+대표적인 예로 아이보리, 파스텔 옐로우, 피치, 라이트 웜 아쿠아등으로 기본적으로 노란색이 가미되어 있습니다.\n
+흰 빛과 푸른 빛이 감도는 색상으로 찬 느낌의 무겁고 칙칙한 색, 한색계열, 무채색, 은색, 와인색 등은 피하는 것이 좋습니다.\n
+여름 유형의 색과는 상극입니다.\n
+"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="149dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146"
+        app:srcCompat="@drawable/springface" />
+
+    <Button
+        android:id="@+id/s_mycolor_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="마이컬러"
+        android:fontFamily="@font/nanumsquareneo_variable"
+        android:textStyle="bold"
+        app:backgroundTint="#58D691"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+</androidx.constraintlayout.widget.ConstraintLayout>

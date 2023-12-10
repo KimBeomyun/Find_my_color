@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ColorInfoActivity">
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        android:layout_marginEnd="184dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cir1" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="196dp"
+        android:layout_marginBottom="444dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cir1" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="139dp"
+        android:layout_height="33dp"
+        android:text="파인드컬러"
+        android:textColor="#325049"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="352dp"
+        android:layout_height="614dp"
+        android:layout_marginBottom="10dp"
+        android:background="#8CD9D9D9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.959">
+
+        <LinearLayout
+            android:id="@+id/layout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="16dp"
+                android:text="퍼스널컬러란?\n
+타고난 개인의 신체 색상으로 사람의 얼굴에 가장 어울리는 색상을 찾는 미용 이론입니다.\n
+피부톤에 어울리는 색상을 웜톤, 쿨톤 그리고 봄, 여름, 가을, 겨울로 나누어 부릅니다.\n
+퍼스널컬러 진단 결과에 따라 어울리는 색조 화장품이나 장신구, 어떤 색상의 옷이 어울리는지 확인할 수 있습니다.\n
+\n
+어떤 이미지로 표현되고싶은지가 아니라 어떤 색에서 본인이 가진 고유한 피부가 건강해보이고 이목구비의 입체감이 자연스럽게 살아나는지를 확인하는 테스트입니다.\n
+무조건 얼굴이 희고 밝게 보이는 색상을 찾는 것이 아님을 유의하길 바랍니다.
+\n"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="match_parent"
+                android:layout_height="356dp"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="16dp"
+                app:srcCompat="@drawable/pcolor" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="16dp"
+                android:text="
+퍼스널컬러에 대한 오해\n
+Q. 어두운 피부색을 가진 사람은 웜톤이고 밝은 피부색을 가진 사람은 쿨톤인가?\n
+- 웜톤, 쿨톤은 피부 밝기와는 상관 없이 웜톤 또는 쿨톤이 어울릴 수 있습니다. \n
+Q. 태닝을 하면 퍼스널컬러가 바뀔 것이다?\n
+- 퍼스널컬러는 개인의 고유한 색으로 바뀌는 경우는 거의 없습니다.\n
+다른 톤의 화장품을 바르면 다른 톤처럼 보이기는 하지만 화장이 뜨고 부자연스럽게 보입니다.\n
+Q. 무조건 한 유형의 퍼스널컬러만 가질 수 있다?\n
+- 가끔 특이 케이스의 경우 여러 계절의 색상이 모두 어울리는 사람이 있을 수 있습니다.\n
+이는 뉴트럴 톤이라고 불리며 모든 유형의 색이 어울리고 웜, 쿨 상관 없이 소화해냅니다.\n"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="78dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037"
+        app:srcCompat="@drawable/mainlogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
